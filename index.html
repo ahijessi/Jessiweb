@@ -27,7 +27,6 @@
       overflow-x: hidden;
     }
 
-    /* Silk Texture Background with New Color Palette */
     .flowing-bg {
       position: relative;
       background: linear-gradient(135deg, #c2d4e5, #d4e1ed, #e6edf4, #f8fafc);
@@ -36,7 +35,6 @@
       min-height: 100vh;
     }
 
-    /* The "Silk Sheen" Overlay */
     .flowing-bg::before {
       content: "";
       position: fixed;
@@ -52,7 +50,6 @@
       animation: silk-sway 18s ease-in-out infinite;
     }
 
-    /* Subtle Grain for Fabric Feel */
     .flowing-bg::after {
       content: "";
       position: fixed;
@@ -63,15 +60,9 @@
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     }
 
-    .chinese-font {
-      font-family: 'Noto Serif SC', serif;
-    }
-    .name-font {
-      font-family: 'Crimson Pro', serif;
-    }
-    .nav-font {
-      font-family: 'Montserrat', sans-serif;
-    }
+    .chinese-font { font-family: 'Noto Serif SC', serif; }
+    .name-font { font-family: 'Crimson Pro', serif; }
+    .nav-font { font-family: 'Montserrat', sans-serif; }
 
     #svg-filters {
       position: absolute;
@@ -84,11 +75,12 @@
 {
   "imports": {
     "react": "https://esm.sh/react@19.0.0",
-    "react/": "https://esm.sh/react@19.0.0/",
     "react-dom": "https://esm.sh/react-dom@19.0.0",
-    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
     "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react",
-    "react-router-dom": "https://esm.sh/react-router-dom@7.2.0?external=react,react-dom"
+    "react-router-dom": "https://esm.sh/react-router-dom@7.2.0?external=react,react-dom",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
@@ -112,5 +104,8 @@
   </svg>
 
   <div id="root"></div>
+
+  <!-- 显式添加脚本入口，确保 React 能够启动 -->
+  <script type="module" src="./index.tsx"></script>
 </body>
 </html>
