@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,6 @@
     /* Silk Texture Background with New Color Palette */
     .flowing-bg {
       position: relative;
-      /* Gradient from Top-Left to Bottom-Right (135deg) */
       background: linear-gradient(135deg, #c2d4e5, #d4e1ed, #e6edf4, #f8fafc);
       background-size: 400% 400%;
       animation: gradient-flow 20s ease-in-out infinite;
@@ -83,17 +83,17 @@
 <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react",
+    "react-router-dom": "https://esm.sh/react-router-dom@7.2.0?external=react,react-dom"
   }
 }
 </script>
 </head>
 <body class="flowing-bg text-slate-900">
-  <!-- SVG Filter for Silk Texture and Folds -->
   <svg id="svg-filters" xmlns="http://www.w3.org/2000/svg">
     <filter id="silk-filter">
       <feTurbulence type="fractalNoise" baseFrequency="0.005 0.008" numOctaves="2" result="noise">
