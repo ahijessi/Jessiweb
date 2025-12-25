@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Page } from '../types';
+import { Page } from '../types.ts';
 
 const Navigation: React.FC = () => {
   const navigate = useNavigate();
@@ -25,7 +25,6 @@ const Navigation: React.FC = () => {
     <nav className="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
       {navItems.map((item) => {
         const active = isActive(item.id);
-        // Determine if we should use white text for better contrast
         const isDarkBackground = ['#c15451', '#cc8ba1', '#665366'].includes(item.color.toLowerCase());
         
         return (

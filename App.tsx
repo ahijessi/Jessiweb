@@ -1,25 +1,23 @@
 
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Education from './pages/Education';
-import Work from './pages/Work';
-import Publications from './pages/Publications';
-import Conferences from './pages/Conferences';
-import Other from './pages/Other';
-import Navigation from './components/Navigation';
+import Home from './pages/Home.tsx';
+import Education from './pages/Education.tsx';
+import Work from './pages/Work.tsx';
+import Publications from './pages/Publications.tsx';
+import Conferences from './pages/Conferences.tsx';
+import Other from './pages/Other.tsx';
+import Navigation from './components/Navigation.tsx';
 
 const AppContent: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* 导航栏：不再使用 fixed，随页面正常滚动 */}
       <header className="z-50 border-b border-slate-200/60 backdrop-blur-md bg-white/60 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 py-6 md:py-8">
           <Navigation />
         </div>
       </header>
       
-      {/* 移除 pt-44，改用正常的间距 mt-12 */}
       <main className="flex-grow max-w-5xl mx-auto px-4 mt-12 mb-20 w-full">
         <Routes>
           <Route path="/" element={<Home />} />
