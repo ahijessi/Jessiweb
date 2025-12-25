@@ -105,7 +105,11 @@
 
   <div id="root"></div>
 
-  <!-- 显式添加脚本入口，确保 React 能够启动 -->
-  <script type="module" src="./index.tsx"></script>
+  <!-- 使用 esm.sh 的运行时加载器来解析 index.tsx -->
+  <script type="module">
+    import { run } from 'https://esm.sh/run';
+    run();
+  </script>
+  <script type="text/babel" src="./index.tsx"></script>
 </body>
 </html>
