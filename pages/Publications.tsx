@@ -98,7 +98,8 @@ const Publications: React.FC = () => {
     return <span className="text-slate-600">{authors}</span>;
   };
 
-  const PublicationCard = ({ pub }: { pub: Publication }) => (
+  // Fixed PublicationCard type to include standard React props like 'key'
+  const PublicationCard: React.FC<{ pub: Publication }> = ({ pub }) => (
     <button 
       onClick={() => setSelectedPdf({ 
         rawUrl: getRawUrl(pub.pdfUrl), 
