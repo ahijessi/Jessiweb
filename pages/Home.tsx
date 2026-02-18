@@ -76,13 +76,13 @@ const Home: React.FC = () => {
 
           <div className="mt-16 space-y-6 text-slate-600 leading-relaxed max-w-2xl text-left mx-auto md:mx-0">
             <p className="text-xl">
-              Welcome to my zone! You can call me <strong>Qianxi</strong> or <strong>Jessi</strong>. I’m a linguistics master's graduate with a strong interest in working with children to observe how they develop their native language. 
+              Welcome to my zone! You can call me <strong>Qianxi</strong> or <strong>Jessi</strong>. I’m a PhD student in linguistics at Macquarie University with a strong interest in working with children to observe how they develop their native language. 
             </p>
             <p className="text-xl">
-              I’m especially passionate about helping children with hearing loss identify language barriers and find strategies to overcome them. For data collection, I use behavioral and neuro tools like <strong>EEG</strong>, with software such as <strong>Psychopy</strong> and <strong>MATLAB</strong>, and for statistical analysis, I work with <strong>Python</strong> and <strong>R</strong>. 
+              I’m especially passionate about helping children with hearing loss identify language barriers and find strategies to overcome them. For data collection, I use behavioural and neuro tools like <strong>EEG</strong>, with software such as <strong>Psychopy</strong> and <strong>MATLAB</strong>, and for statistical analysis, I work with <strong>Python</strong> and <strong>R</strong>. 
             </p>
             <p className="text-xl font-medium text-slate-800">
-              I’m looking for PhD opportunities in relevant fields. Feel free to ask me anything!
+              Feel free to ask me anything!
             </p>
           </div>
         </div>
